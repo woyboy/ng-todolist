@@ -1,0 +1,123 @@
+.container {
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+h1 {
+    font-size: 50px;
+    color: lightpink;
+    text-align: center;
+    text-shadow: 3px 3px black;
+}
+
+#intro {
+    color: rgb(159, 220, 255);
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 3px 3px black;
+}
+
+#step1 {
+    color: rgb(142, 255, 185);
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 3px black;
+    margin: 20px;
+}
+
+#step2 {
+    color: rgb(247, 255, 142);
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 3px black;
+    margin: 20px;
+}
+
+#input-tools-container {
+    width: 50%;
+    float: left;
+    margin: 40px 0px 0px 0px;
+}
+
+input {
+    font-size: 15px;
+    height: 44px;
+    width: 80%;
+    margin: 0px 0px 0px 100px;
+    border: none;
+    padding-left: 7px;
+    border: 2px solid;
+}
+
+#tools {
+    width: 50%;
+    height: 60px;
+    margin: 10px 0px 0px 100px;
+    float: left;
+}
+
+#enter, #delete {
+    background-color: rgb(4, 128, 150);
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    border: 2px solid black;
+    float: left;
+}
+
+#small-container {
+    height: 300px;
+    width: 50%;
+    float: right;
+}
+
+#task-title {
+    height: 40px;
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+#task-container {
+    background-color: rgb(4, 128, 150);
+    height: 250px;
+    width: 80%;
+    border: 2px solid black;
+    margin-left: 5%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#task {
+    margin: 15px 15px 15px 15px;
+    user-select: none;
+
+}
+
+#bullet {
+    margin: 0px 5px 0px 0px;
+    word-wrap: break-word;
+}
+
+#clear {
+    background-color: rgb(4, 128, 150);
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 5%;
+    padding: 0px;
+    border: 2px solid black;
+    float: left;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+
+
+
