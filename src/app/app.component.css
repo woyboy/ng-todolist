@@ -67,7 +67,7 @@ input {
 }
 
 #small-container {
-    height: 300px;
+    height: 1000px;
     width: 50%;
     float: right;
 }
@@ -80,10 +80,24 @@ input {
 
 #task-container {
     background-color: rgb(4, 128, 150);
-    height: 250px;
+    height: 300px;
     width: 80%;
     border: 2px solid black;
     margin-left: 5%;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    background-color:  rgb(247, 255, 142);
+    border-left: 2px solid black;
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightpink; 
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 ul {
