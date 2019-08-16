@@ -108,8 +108,6 @@ ul {
 
 #task {
     margin: 15px 15px 15px 15px;
-    user-select: none;
-
 }
 
 #bullet {
@@ -130,6 +128,73 @@ ul {
 
 .done {
     text-decoration: line-through;
+}
+
+@media (max-width: 375px) {
+
+.container {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+h1 {
+    font-size: 35px;
+}
+
+#intro, #step1, #step2 {
+    font-size: 25px;
+}
+
+#tools {
+    width: 90%;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+input {
+    font-size: 15px;
+    height: 44px;
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    border: none;
+    padding-left: 7px;
+    border: 2px solid;
+}
+
+#input-tools-container {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+}
+#enter, #delete {
+    background-color: rgb(4, 128, 150);
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    border: 2px solid black;
+    float: left;
+}
+
+#small-container {
+    height: 300px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#task-title {
+    height: 40px;
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+#task-container {
+    background-color: rgb(4, 128, 150);
+    height: 250px;
+    width: 100%;
+    border: 2px solid black;
+    margin-left: 0%;
+}
 }
 
 
