@@ -1,36 +1,41 @@
 .container {
-    padding: 20px 20px 20px 20px;
-    margin: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-h1 {
+#full-title {
     font-size: 50px;
     color: lightpink;
     text-align: center;
     text-shadow: 3px 3px black;
 }
 
-#intro {
-    color: rgb(159, 220, 255);
+#abb-title {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.steps {
     font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     text-shadow: 3px 3px black;
 }
 
+#intro {
+    color: rgb(159, 220, 255);
+}
+
 #step1 {
     color: rgb(142, 255, 185);
-    font-size: 30px;
-    text-align: center;
-    text-shadow: 2px 3px black;
-    margin: 20px;
 }
 
 #step2 {
     color: rgb(247, 255, 142);
-    font-size: 30px;
-    text-align: center;
-    text-shadow: 2px 3px black;
-    margin: 20px;
 }
 
 #input-tools-container {
@@ -66,25 +71,26 @@ input {
     float: left;
 }
 
-#small-container {
+#task-container {
     height: 1000px;
     width: 50%;
     float: right;
 }
 
-#task-title {
+#task-list-title {
     height: 40px;
     font-size: 30px;
     margin-left: 5%;
 }
 
-#task-container {
+#task-list {
     background-color: rgb(4, 128, 150);
     height: 300px;
     width: 80%;
     border: 2px solid black;
     margin-left: 5%;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -130,26 +136,40 @@ ul {
     text-decoration: line-through;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
 
-.container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+#abb-title {
+    font-size: 50px;
+    color: lightpink;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    display: block;
 }
+
+#full-title {
+    display: none;
+}
+
 h1 {
     font-size: 35px;
 }
 
-#intro, #step1, #step2 {
-    font-size: 25px;
+.steps {
+    font-size: 20px;
+    text-shadow: 1px 1px black;
 }
 
-#tools {
-    width: 90%;
-    height: 60px;
-    margin-top: 10px;
-    margin-left: 15%;
+#int {
+    font-size: 20px;
 }
+
+
+#input-tools-container {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    clear: both;
+}
+
 input {
     font-size: 15px;
     height: 44px;
@@ -161,10 +181,13 @@ input {
     border: 2px solid;
 }
 
-#input-tools-container {
-    width: 100%;
-    margin: 0px 0px 0px 0px;
+#tools {
+    width: 90%;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 15%;
 }
+
 #enter, #delete {
     background-color: rgb(4, 128, 150);
     height: 50px;
@@ -175,28 +198,37 @@ input {
     float: left;
 }
 
-#small-container {
-    height: 300px;
-    width: 70%;
+#task-container {
+    height: 1000px;
+    width: 100%;
+    float: left;
     margin-left: 15%;
-    margin-right: 15%;
 }
 
-#task-title {
+#task-list-title {
     height: 40px;
     font-size: 30px;
-    margin-left: 5%;
-}
-
-#task-container {
-    background-color: rgb(4, 128, 150);
-    height: 250px;
-    width: 100%;
-    border: 2px solid black;
     margin-left: 0%;
 }
+
+#task-list {
+    background-color: rgb(4, 128, 150);
+    height: 300px;
+    width: 80%;
+    border: 2px solid black;
+    margin-left: 0%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-
-
-
+#clear {
+    background-color: rgb(4, 128, 150);
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 0%;
+    padding: 0px;
+    border: 2px solid black;
+    float: left;
+}
+}

@@ -1,9 +1,10 @@
 <body>
   <div class="container">
-    <h1>{{ title }}</h1>
-    <div id="intro">{{ intro }}</div>
-    <div id="step1">{{ step1 }}</div>
-    <div id="step2">{{ step2 }}</div>
+    <h1 id="full-title">{{ fullTitle }}</h1>
+    <h1 id="abb-title"> {{ abbTitle }}</h1>
+    <div class="steps" id="intro">{{ intro }}</div>
+    <div class="steps" id="step1">{{ step1 }}</div>
+    <div class="steps" id="step2">{{ step2 }}</div>
   </div>
   <div id="input-tools-container">
     <div id="input-container">
@@ -14,13 +15,14 @@
       <button id="delete" (click)='clearInput()'><i class="fas fa-minus fa-lg"></i></button>
     </div>
   </div>
-  <div id="small-container">
-  <div id="task-title">Shit list:</div>
   <div id="task-container">
+  <div id="task-list-title">Shit list:</div>
+  <div id="task-list">
     <ul>
       <li id="task" *ngFor="let task of taskList" [ngClass]="{'done':taskList[taskList.indexOf(task)].complete}">
         <i class="fas fa-skull-crossbones" 
-        id="bullet" (click)='taskIsDone(taskList.indexOf(task))'>
+        id="bullet" (click)='taskIsDone(taskList.indexOf(task))' (mousedown)='deleteTask(taskList.indexOf(task))'
+        (mouseup)='clearTime()'>
       </i>{{ task.value }}</li>
     </ul>
   </div>
