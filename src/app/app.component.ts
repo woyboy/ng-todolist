@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  fullTitle = 'LET\'S DO THIS SHIT!';
-  abbTitle = 'LDTS!';
-  intro = 'Keep track of all the shit you are going to do today!';
-  step1 = 'Enter new shit using the field below.';
-  step2 = 'Then mark shit off when you finish it.';
+  fullTitle = 'LET\'S DO THIS!';
+  abbTitle = 'LDT!';
+  intro = 'Keep track of all tasks you are going to finish today!';
+  step1 = 'Enter new tasks using the field below.';
+  step2 = 'Then mark tasks off after you finish them.';
   taskList: {value: string, complete: boolean}[] = [];
   newTask: any;
   newTaskValue: any;

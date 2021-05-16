@@ -8,7 +8,7 @@
   </div>
   <div id="input-tools-container">
     <div id="input-container">
-      <input id="new-task" (keyup.enter)='addNewTask()' type="text" placeholder="Enter new shit here">
+      <input id="new-task" (keyup.enter)='addNewTask()' type="text" placeholder="Enter new tasks here">
     </div>
     <div id="tools">
       <button id="enter" (click)='addNewTask()'><i class="fas fa-plus fa-lg"></i></button>
@@ -16,7 +16,7 @@
     </div>
   </div>
   <div id="task-container">
-  <div id="task-list-title">Shit list:</div>
+  <div id="task-list-title">Task list:</div>
   <div id="task-list">
     <ul>
       <li id="task" *ngFor="let task of taskList" [ngClass]="{'done':taskList[taskList.indexOf(task)].complete}">
