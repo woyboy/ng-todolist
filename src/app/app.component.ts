@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   fullTitle = 'LET\'S DO THIS!';
   abbTitle = 'LDT!';
-  intro = 'Keep track of all tasks you are going to finish today!';
+  intro = 'Keep track of the tasks you are going to finish today!';
   step1 = 'Enter new tasks using the field below.';
   step2 = 'Then mark tasks off after you finish them.';
   taskList: {value: string, complete: boolean}[] = [];
